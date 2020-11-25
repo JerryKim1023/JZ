@@ -1,37 +1,113 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/JerryKim1023/website/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<html>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
+    <title>Almighty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5/css/all.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" />
 
-### Markdown
+    <link rel="shortcut icon" id="favicon" href="res/img/rogo.png" type="image/x-icon" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="res/img/rogo.png">
+    <link rel="apple-touch-icon" href="res/img/rogo.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="res/img/rogo.png">
+    <meta name="mobile-web-app-capable" content="yes">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="res/css/styles.css" type="text/css" />
 
-```markdown
-Syntax highlighted code block
+    <!-- External scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 클립보드 사용 share.js-->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+</head>
 
-# Header 1
-## Header 2
-### Header 3
+<body>
+    <div id="dataFramesContainer"></div>
+    <header>
+        <!-- 상단 검색 바1-->
+        <h1 id="title">
+            <a href="">
+                <img id="logo" src="res/img/rogo.png" />
+            </a>
+        </h1>
+        <div id="inputBoxContainer">
+            <form action="javascript:input(0);" method="get" id="searchForm">
+                <input type="text" id="inputBox" />
+            </form>
+            <div id="searchProgress">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+        <button id="saveButton" onclick="saveButton();" title="Copy your playlist to clipboard"></button>
+    </header>
+    <!-- 상단 검색 바2-->
+    <div id="main">
+        
+    </div>
+    <!-- 하단 플레이1 -->
+    <footer>
+        <div id="previousVideo" onclick="backVideo();" title="Back">
+            <div class="videoNameContainer">
+                <p class="videoName"></p>
+            </div>
+            <div class="videoImageContainer">
+                <div class="videoImageWrapper">
+                    <img class="videoImage" src="" />
+                    <span class="fas fa-backward"></span>
+                    <p class="videoTime"></p>
+                </div>
+            </div>
+        </div>
+        <div id="playlistInterface">
+            <div id="youtubeContainer">
+                <span id="remotePauseIcon" class="fas fa-play"></span>
+                <iframe id="youtube" src="" allowfullscreen></iframe>
+            </div>
+            <div id="currentVideoTiming">
+                <span id="currentTime">0:00</span>
+                <span id="progressContainer">
+                    <span id="progress" style="width:0%;"></span>
+                </span>
+                <span id="videoTime">0:00</span>
+            </div>
+        </div>
+        <div id="nextVideo" onclick="forwardVideo();" title="Forward">
+            <div class="videoImageContainer">
+                <div class="videoImageWrapper">
+                    <img class="videoImage" src="" />
+                    <span class="fas fa-forward"></span>
+                    <p class="videoTime"></p>
+                </div>
+            </div>
+            <div class="videoNameContainer">
+                <p class="videoName"></p>
+            </div>
+        </div>
+        <div id="settings">
+            <span class="fas fa-arrow-circle-right" onclick="playlistFeatures.playNext();"
+                title="Added videos will play next"></span>
+            <span class="fas fa-random" onclick="playlistFeatures.shuffle();" title="Playlist shuffle"></span>
+            <span class="fas fa-redo-alt" onclick="playlistFeatures.repeat();" title="Playlist repeat"></span>
+            <span class="fas fa-rss" onclick="playlistFeatures.autoplay();" title="Almighty autoPlay"></span>
+        </div>
+    </footer>
+    <!-- 하단 플레이2 -->
 
-- Bulleted
-- List
+    <!-- js script 추가 -->
+    <script src="res/js/front/init.js"></script>
+    <script src="res/js/front/share.js"></script>
+</body>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JerryKim1023/website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
