@@ -23,7 +23,7 @@ function setPlaylist() {
     else {
       window.location.hash = "";
     }
-    $("#saveButton").attr("data-clipboard-text", "https://https://jerrykim1023.github.io/Player/#" + playlist);
+    $("#saveButton").attr("data-clipboard-text", "https://jerrykim1023.github.io/Player/#" + playlist);
   }
   
   // * This function gets the playlist from the hash parameter of the URL
@@ -32,7 +32,7 @@ function setPlaylist() {
   function getPlaylist() {
     if (window.location.hash.substr(1) !== "") {
       let playlist = window.location.hash.substr(1);
-      $("#saveButton").attr("data-clipboard-text", "https://https://jerrykim1023.github.io/Player/#" + playlist);
+      $("#saveButton").attr("data-clipboard-text", "https://jerrykim1023.github.io/Player/#" + playlist);
       try {
         playlist = window.atob(playlist);
         playlist = JSON.parse(playlist);
