@@ -45,7 +45,7 @@ function escape(what) {
       addAutoplayVideo();
     }
   
-    document.title = "Streamly - " + decodeURIComponent(videos[videoIteration][0]);
+    document.title = "Almighty - " + decodeURIComponent(videos[videoIteration][0]);
   
     if (!stationRemote) {
       $("#youtube").css("display", "block");
@@ -80,10 +80,10 @@ function escape(what) {
       actionTimers.clear();
       $("#youtube").css("display", "none");
       if (videos[0] !== undefined && videos[0] !== null) {
-        document.title = "Streamly - " + decodeURIComponent(videos[0]);
+        document.title = "Almighty - " + decodeURIComponent(videos[0]);
       }
       else {
-        document.title = "Streamly";
+        document.title = "Almighty";
       }
     }
   }
@@ -96,14 +96,14 @@ function escape(what) {
       setVideoTime();
       sendStation("videofunctionsplay");
       videoPaused = false;
-      document.title = "Streamly - " + decodeURIComponent(videos[videoIteration][0]);
+      document.title = "Almighty - " + decodeURIComponent(videos[videoIteration][0]);
       $("#favicon").attr("href", faviconPlay);
     }
     this.pause = function() {
       sendStation("videofunctionspause");
       videoPaused = true;
       if (videos[0] !== undefined && videos[0] !== null) {
-        document.title = "Streamly - " + decodeURIComponent(videos[0]);
+        document.title = "Almighty - " + decodeURIComponent(videos[0]);
       }
       $("#favicon").attr("href", faviconPause);
       actionTimers.pause();
@@ -205,7 +205,7 @@ function escape(what) {
           player.stopVideo();
           $("#youtube").css("display", "none");
         }
-        document.title = "Streamly";
+        document.title = "Almighty";
         videoIteration = changeIteration(-1);
       }
     }
