@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/MainWindow"/>
+    <qresource prefix="/qtwebchannel">
+        <file>qwebchannel.js</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>index.html</file>
+        <file>jquery-3.5.1.min.js</file>
+        <file>yt.js</file>
+    </qresource>
+</RCC>

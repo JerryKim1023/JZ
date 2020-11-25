@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="unsafe-url" />
+    <style>
+        iframe {
+            position: absolute;
+            width: 70%;
+            height: 80%;
+            left: 100px;
+            top: 0;
+        }
+
+        #output {
+            width: 100px;
+            height: 100px;
+            vertical-align: top;
+        }
+
+
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="qrc:///jquery-3.5.1.min.js"></script>
+    <textarea id="output" name="output"></textarea>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="ytplayer"></div>
+    <script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    <script type="text/javascript" src="qrc:///yt.js"></script>
+</body>
+</html>
+
