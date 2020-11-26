@@ -18,7 +18,7 @@ $("#inputBox").on("paste", function() {
   });
   
   $("#inputBox").on("focus", function() {
-    $(this).attr("placeholder", "(End your search with \\ for Quick Search, add 'l' for lyric videos)");
+    $(this).attr("placeholder", "(한글검색은 끝에 /를 붙여서 검색해주세요 , '\\'를 끝에 붙이면 빠른 검색추가가 되요)");
     setTimeout(function() {
       $("#inputBox").attr("placeholder", placeholder);
     }, 4000);

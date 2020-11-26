@@ -37,12 +37,12 @@ let Cookie = function() {
   
   if ($(window).width() <= 600) {
     isMobile = true;
-    placeholder = "Search, Paste link...";
+    placeholder = "검색, 링크를 넣어주세요";
     loadingPlaceholder = "Loading...";
     background = "none";
   }
   else {
-    placeholder = "Search, drag/drop or paste link to video/playlist...";
+    placeholder = "검색, 재생목록에 링크를 끌어다 놓거나 붙여주세요.";
     loadingPlaceholder = "Loading video data from YouTube...";
   }
   $("#inputBox").attr("placeholder", placeholder);

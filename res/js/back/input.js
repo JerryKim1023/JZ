@@ -97,7 +97,7 @@ function urlValidate(url) {
               autoplayListOverride = true;
               break;
             default:
-              alert("Sorry, but that option does not exist\n\nCheck with the list of Streamly options on GitHub");
+              alert("Sorry, but that option does not exist\n\nCheck with the list of Almighty options on GitHub");
           }
           $("#inputBox").val("").attr("placeholder", placeholder);
         }
