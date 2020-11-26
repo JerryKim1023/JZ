@@ -12,7 +12,7 @@
 **/
 
 // * This function provides a mainframe timer for use in videoProgress
-// * It used to be used for video change timing in Streamly w/o YouTube API
+// * It used to be used for video change timing in Almighty w/o YouTube API
 
 function Timer(callback, delay) {
     let id, started, remaining = delay, running;

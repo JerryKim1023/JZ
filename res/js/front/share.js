@@ -55,7 +55,7 @@ function shareOnReddit() {
     window.open("https://www.reddit.com/user/JerryKim1023/submit?resubmit=true&title=Playlist%20-%20" + playlistName + "&url=https://https://jerrykim1023.github.io/Player/%23" + window.location.hash.substr(1), "_blank");
   }
   else {
-    alert("The playlist you are sharing is too long to automatically post, so please copy your Streamly Playlist URL and paste it into the open Reddit tab (you can copy by clicking the \"링크목록 복사하기\" button).\n\nSorry for this inconvenience.");
+    alert("The playlist you are sharing is too long to automatically post, so please copy your Almighty Playlist URL and paste it into the open Reddit tab (you can copy by clicking the \"링크목록 복사하기\" button).\n\nSorry for this inconvenience.");
     window.open("https://old.reddit.com/r/JerryKim1023/submit?resubmit=true&title=Playlist%20-%20" + playlistName + "&url=%5BPaste+shortened+link+here%5D", "_blank");
   }
 }

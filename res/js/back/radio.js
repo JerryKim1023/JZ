@@ -11,9 +11,9 @@
   limitations under the License.
 **/
 
-// Start Streamly Radio
+// Start Almighty Radio
 
-// * This function loads the video for the Streamly Radio function
+// * This function loads the video for the Almighty Radio function
 
 function loadAutoplayData(iteration) {
     autoplayLoading = true;
@@ -55,7 +55,7 @@ function loadAutoplayData(iteration) {
     radioDataPlayer.cuePlaylist({list:autoplayUrl});
   }
   
-  // * This function compiles an array of videos for Streamly Radio
+  // * This function compiles an array of videos for Almighty Radio
   // * Making sure they aren't in the current playlist already
   
   function onRadioDataPlayerStateChange(event) {
@@ -87,7 +87,7 @@ function loadAutoplayData(iteration) {
     }
   }
   
-  // * This function loads the latest Streamly Radio video into the playlist
+  // * This function loads the latest Almighty Radio video into the playlist
   
   function addAutoplayVideo(base = videoIteration, option = '') {
     if (!base) { base = videoIteration; } //conditional for uses that need option, yet not setting base
@@ -105,12 +105,12 @@ function loadAutoplayData(iteration) {
           loadAutoplayData(base);
         }
         else {
-          //kill Streamly Radio after the playlist is loaded
+          //kill Almighty Radio after the playlist is loaded
           playlistFeatures.autoplay();
         }
       }
     }
   }
   
-  // End Streamly Radio
+  // End Almighty Radio
   

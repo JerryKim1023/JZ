@@ -11,7 +11,7 @@
   limitations under the License.
 **/
 
-// * This function is for user identification in Streamly Station
+// * This function is for user identification in Almighty Station
 
 function makeId() {
     let text = "";
@@ -24,9 +24,9 @@ function makeId() {
     return text;
   }
   
-  // Start Streamly Station
+  // Start Almighty Station
   
-  // * This function flashes the Streamly Station icon
+  // * This function flashes the Almighty Station icon
   
   function flashStationIcon() {
     $("#stationIcon").css("color", "red");
@@ -35,7 +35,7 @@ function makeId() {
     }, 300);
   }
   
-  // * This function sends a command to the Streamly Station
+  // * This function sends a command to the Almighty Station
   
   function sendStation(what) {
     if (stationServer !== undefined && stationServer !== null) {
@@ -50,12 +50,12 @@ function makeId() {
     }
   }
   
-  // * This function begins a connection with the Streamly Station and listens for commands
+  // * This function begins a connection with the Almighty Station and listens for commands
   
   function loadStation() {
     stationSocket = io("http://" + stationServer);
     stationUserId = makeId();
-    alert("Streamly Station \"" + stationServer + "\" connected!");
+    alert("Almighty Station \"" + stationServer + "\" connected!");
   
     $("#stationIcon").css("display", "initial");
   
@@ -127,7 +127,7 @@ function makeId() {
     });
   }
   
-  // * This function loads the Streamly Station client-side code and runs the loadStation function
+  // * This function loads the Almighty Station client-side code and runs the loadStation function
   
   function connectStation(server) {
     stationServer = server;
@@ -153,8 +153,8 @@ function makeId() {
     if (window.location.protocol === "https:" && securityWarning === false) {
       securityWarning = true;
       alert("Note: Due to security protections, scripts on secured pages with 'https://' cannot make unsecured connections. " +
-            "Streamly Station runs without any onboard security, so this request will probably be blocked and you'll get a notification that the site requested unsecured scripts.\n\n" +
-            "In order to use Streamly Station, either make an exception to 'Load unsafe scripts' or replace the 'https://' with 'http://' in the URL.");
+            "Almighty Station runs without any onboard security, so this request will probably be blocked and you'll get a notification that the site requested unsecured scripts.\n\n" +
+            "In order to use Almighty Station, either make an exception to 'Load unsafe scripts' or replace the 'https://' with 'http://' in the URL.");
     }
     connectStation(station);
   }
@@ -178,5 +178,5 @@ function makeId() {
     }
   }
   
-  // End Streamly Station
+  // End Almighty Station
   

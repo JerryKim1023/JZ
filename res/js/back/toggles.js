@@ -79,7 +79,7 @@ function toggleZen() {
     }
   }
   
-  // * This object loads the drop overlay over Streamly
+  // * This object loads the drop overlay over Almighty
   // * It is used primarily for when the settings window is toggled and when drag&drop searching is activated
   
   let DropOverlay = function() {

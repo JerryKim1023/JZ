@@ -41,7 +41,7 @@ function setPlaylist() {
         if (videos[0] !== undefined && videos[0] !== null) {
           let playlistTitle = decodeURIComponent(videos[0]); //this is okay for XSS because its fed to an input element
           $("#playlistNameBox").val(playlistTitle);
-          $("#ogTitle").attr("content", "Streamly - " + playlistTitle);
+          $("#ogTitle").attr("content", "Almighty - " + playlistTitle);
         }
   
         for (let i = 1; i < videos.length; i++) {
@@ -56,7 +56,7 @@ function setPlaylist() {
       }
       catch(err) {
         alert("Uh oh... It looks like this playlist URL is broken, however, you may still be able to retrieve your data.\n\n" +
-        "Make sure that you save the URL that you have now, and contact me (the administrator) by submitting an issue on Streamly's Github page.\n\n" +
+        "Make sure that you save the URL that you have now, and contact me (the administrator) by submitting an issue on Almighty's Github page.\n\n" +
         "I'm really sorry about this inconvenience.\n\nerr: " + err);
       }
     }
