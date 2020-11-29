@@ -19,12 +19,12 @@ function urlValidate(url) {
     
     let youtubeRegex = /(?:v=|youtu\.be\/|youtube\..+\/embed\/)([^?&]+)/i;
     let youtubeListRegex = /list=([^?&]+)/i;
-    let streamlyRegex = /.*#(.+)/i;
+    let AlmightyRegex = /.*#(.+)/i;
     let imageRegex = /.+?\.(jpeg|jpg|gif|png)/i;
     
     let youtubeMatch = url.match(youtubeRegex);
     let youtubeListMatch = url.match(youtubeListRegex);
-    let streamlyMatch = url.match(streamlyRegex);
+    let AlmightyMatch = url.match(AlmightyRegex);
     let imageMatch = url.match(imageRegex);
   
     if (youtubeMatch && youtubeListMatch) {
@@ -35,9 +35,9 @@ function urlValidate(url) {
       output = youtubeMatch[1];
       output = ["youtube", output];
     }
-    else if (streamlyMatch) {
-      output = streamlyMatch[1];
-      output = ["streamly", output];
+    else if (AlmightyMatch) {
+      output = AlmightyMatch[1];
+      output = ["Almighty", output];
     }
     else if (imageMatch) {
       output = imageMatch[0];
@@ -48,11 +48,11 @@ function urlValidate(url) {
   }
   
   // * This function handles all user inputs
-  // * It has changed minimally throughout the history of Streamly
+  // * It has changed minimally throughout the history of Almighty
   // * Its 'type' parameter specifies where the input is coming from (which I'm eventually going to change)
   // * The playlist name box type number is 2
   
-  // * If a YouTube video URL load video to playlist, if a Streamly playlist append it to the current one, if none of the above load search
+  // * If a YouTube video URL load video to playlist, if a Almighty playlist append it to the current one, if none of the above load search
   
   function input(type) {
     //if playlist input
@@ -122,7 +122,7 @@ function urlValidate(url) {
             }
             ***/
           }
-          else if (url[0] === "streamly") {
+          else if (url[0] === "Almighty") {
             appendPlaylist(url[1]);
             $("#inputBox").val("").attr("placeholder", placeholder);
           }
