@@ -32,7 +32,7 @@ let Cookie = function() {
   // * They exist for data that must persist for the script to work
   
   let isMobile = false;
-  let background = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Veil_Nebula_-_NGC6960.jpg/1280px-Veil_Nebula_-_NGC6960.jpg";
+  let background = "night2.jpg";
   let placeholder, loadingPlaceholder;
   
   if ($(window).width() <= 600) {
