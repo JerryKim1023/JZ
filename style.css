@@ -253,7 +253,7 @@ section{
       font-family: 'Roboto', sans-serif;
     }
 
-    body, 
+    #body, 
     #blurBackground {
       /** GS theme
       background-color: #f77f00;
@@ -793,7 +793,7 @@ section{
   .headerButton {
     margin-left: 5px !important;
   }
-  ##blurBackground {
+  #blurBackground {
     display: none !important;
   }
   body, #main {
