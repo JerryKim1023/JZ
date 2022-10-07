@@ -32,7 +32,7 @@ let Cookie = function() {
   // * They exist for data that must persist for the script to work
   
   let isMobile = false;
-  let background = "night2.jpg";
+  let background = "https://images.unsplash.com/photo-1665076180130-1e9d63e261b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60";
   let placeholder, loadingPlaceholder;
   
   if ($(window).width() <= 600) {
