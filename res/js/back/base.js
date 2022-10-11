@@ -46,6 +46,7 @@ function escape(what) {
     }
   
     document.title = "Almighty - " + decodeURIComponent(videos[videoIteration][0]);
+    console.log('@@@@@@@@@@@@@ 비디오 이터레이션' + videos[videoIteration] + '@@@@@@@@@@@@@')
   
     if (!stationRemote) {
       $("#youtube").css("display", "block");

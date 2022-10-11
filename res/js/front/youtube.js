@@ -45,6 +45,10 @@ function startVideoProgress() {
     switch(event.data) {
       //unstarted
       case -1:
+        console.log('!!!@@@@@@@@@@!!!')
+        console.log(event)
+        console.log(event.data)
+        console.log('!!!@@@@@@@@@@!!!')
         console.log("unstarted");
         break;
       //ending
