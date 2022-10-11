@@ -776,3 +776,7 @@ section{
     display: none;
   }
 }
+
+#videosTable tr {
+  user-select: all;
+}
