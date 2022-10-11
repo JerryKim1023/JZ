@@ -106,7 +106,7 @@ function urlValidate(url) {
             inputBox = url[1];
             getVideoData(inputBox);
             $("#inputBox").val("").attr("placeholder", loadingPlaceholder);
-            /***
+          /***REVERT TO POPUP DUE TO YOUTUBE***/
             if (typeof popup !== "undefined") {
               if (popupClose === true) {
                 dropOverlay.close();
@@ -120,7 +120,7 @@ function urlValidate(url) {
                 popup.focus();
               }
             }
-            ***/
+            /******/
           }
           else if (url[0] === "Almighty") {
             appendPlaylist(url[1]);
@@ -145,7 +145,7 @@ function urlValidate(url) {
           if (inputBox.slice(-2) === " l") {
             inputBox = inputBox + "yric";
           }
-          /***
+          /*** 팝업으로 수정 ***/
           popup = window.open("https://www.youtube.com/results?search_query=" + inputBox.replace(/ /g, "+"), "YouTube", "height=500,width=800");
           dropOverlay.open();
   
@@ -156,9 +156,9 @@ function urlValidate(url) {
               }
           }
           let checkIfClosedTimer = setInterval(checkIfClosed, 500);
-          ***/
-          inBoxSearch = true;
-          quickSearch(inputBox);
+          
+          // inBoxSearch = true;
+          // quickSearch(inputBox);
           //$("#inputBox").val("").attr("placeholder", loadingPlaceholder).blur();
           $("#inputBox").blur().focus();
         }
