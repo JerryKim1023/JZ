@@ -42,7 +42,7 @@ function toggleSBS() {
     setBackground();
   }
   else {
-    $("head").append("<link id=\"sbs\" rel=\"stylesheet\" href=\"static/css/sbs.css\" type=\"text/css\" />");
+    $("head").append("<link id=\"sbs\" rel=\"stylesheet\" href=\"res/css/sbs.css\" type=\"text/css\" />");
     cookie.set("sbs", "1");
   }
 }
